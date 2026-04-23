@@ -1,0 +1,16 @@
+// 1. Importar boostrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// 2. Modificaciones mias
+$primary: #0047ab;
+$enable-shadows: true; //sombras
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.custom-card {
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
