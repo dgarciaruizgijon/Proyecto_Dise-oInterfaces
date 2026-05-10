@@ -1,0 +1,16 @@
+@use 'vars' as v;
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: v.$font-family-sans-serif;
+    background-color: v.$body-bg;
+}
+
+a:focus, button:focus, .form-control:focus {
+    outline: 3px solid v.$primary !important;
+    outline-offset: 2px;
+    box-shadow: none !important; 
+}

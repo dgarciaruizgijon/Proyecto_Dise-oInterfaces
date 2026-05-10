@@ -1,0 +1,29 @@
+@use '../base/vars' as v;
+
+
+.info-contacto {
+    i { 
+        color: v.$primary; 
+        margin-right: 1rem; 
+    }
+    p {
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+.form-control, .form-select {
+    &:focus {
+        border-color: v.$primary;
+        box-shadow: 0 0 0 0.25rem rgba(v.$primary, 0.25);
+    }
+}
+
+.invalid-feedback {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 2rem;
+}

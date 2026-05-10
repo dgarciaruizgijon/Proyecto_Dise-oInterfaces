@@ -1,31 +1,8 @@
-// 1. Importar boostrap
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-
-// 2. Modificaciones mias
-$primary: #0047ab;
-$enable-shadows: true; //sombras
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-.custom-card {
-    transition: transform 0.3s ease;
-    &:hover {
-        transform: translateY(-5px);
-    }
-}
-
-// imágenes de la carta
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid $primary;
-}
-
-// Efecto enlaces del menú
-.nav-link {
-    transition: color 0.3s ease;
-    &:hover {
-        color: $primary !important;
-    }
-}
+@use "ui/base/vars";
+@use "../node_modules/bootstrap/scss/bootstrap";
+@use "ui/base/globals";
+@use "ui/header/header"; 
+@use "ui/steps/steps";
+@use "ui/steps/hero";
+@use "ui/carta/carta";
+@use "ui/form/form";

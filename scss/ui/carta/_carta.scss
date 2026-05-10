@@ -1,0 +1,44 @@
+@use '../base/vars' as v;
+
+.card {
+    transition: transform .3s ease, box-shadow .3s ease;
+    border: none;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .btn-primary {
+        background-color: v.$primary;
+        border-color: v.$primary;
+    }
+}
+
+.card-img-top {
+    height: 22rem;
+    object-fit: cover;
+}
+
+.card-title {
+    color: v.$dark;
+    font-size: 2.2rem;
+}
+
+.card-price {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: v.$primary;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}

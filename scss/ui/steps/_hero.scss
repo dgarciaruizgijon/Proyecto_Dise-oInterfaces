@@ -1,0 +1,28 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url('/assets/img/hero/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &__titulo {
+    
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    &__texto {
+    
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
