@@ -11939,6 +11939,13 @@ a:focus, button:focus, .form-control:focus {
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
+  overflow: hidden;
+}
+.card img {
+  display: block;
+  margin: 1.5rem auto;
+  width: 90%;
+  border-radius: 15px;
 }
 .card:hover {
   transform: translateY(-10px);

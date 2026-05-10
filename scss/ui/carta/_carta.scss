@@ -3,6 +3,14 @@
 .card {
     transition: transform .3s ease, box-shadow .3s ease;
     border: none;
+    overflow: hidden; 
+    
+    img {
+        display: block;
+        margin: 1.5rem auto; 
+        width: 90%;          
+        border-radius: 15px; 
+    }
 
     &:hover {
         transform: translateY(-10px);
